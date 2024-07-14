@@ -5,6 +5,7 @@ ruby '3.3.0'
 
 # Gemfile 追加分
 gem 'bcrypt', '~> 3.1.7'
+gem 'rails-ujs'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.7', '>= 6.1.7.7'

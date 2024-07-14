@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TwitterClone</title>
+    <title>Twitter Clone</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,26 @@
   </head>
 
   <body>
+   <header>
+     <nav>
+       <div class="container">
+        <h1><%= link_to 'Twitter Clone', root_path %></h1>
+        <%= link_to 'New Post', new_post_path %>
+       </div>
+     </nav>
+    </header>
+
+   <main>
+    <div class="container">
     <%= yield %>
+    </div>
+   </main>
+
+   <footer>
+    <div class="container">
+     <p>&copy; 2024 Twitter Clone. All rights reserved.</p>
+    </div>
+   </footer>
+
   </body>
 </html>
